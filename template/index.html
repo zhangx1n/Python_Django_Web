@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is INDEX</title>
+    <style type="text/css">
+        .style1{
+            font-size: 20px;
+            font-weight: bolder;
+
+        }
+        .style2{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <tr >
+        <div class="style1">
+            <td class="style2">书名</td>
+            <td>出版时间</td>
+            <td>阅读量</td>
+        </div>
+
+
+    </tr>
+    <tr>
+        {% for book in books %}
+            <td>{{ book.name }}</td>
+        {% endfor %}
+
+    <tr>
+
+</body>
+</html>
